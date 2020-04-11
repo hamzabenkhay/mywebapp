@@ -10,7 +10,7 @@ pip-3.6 install -r requirements.txt
 
 python --version
 
-#echo alias python='/usr/bin/python3.6' >> ~/.bashrc
-#source ~/.bashrc
+echo alias python='/usr/bin/python3.6' >> ~/.bashrc
+source ~/.bashrc
 
 behave -f allure_behave.formatter:AllureFormatter -o ./allure-results
