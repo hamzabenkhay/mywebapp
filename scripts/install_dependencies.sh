@@ -2,8 +2,7 @@
 yum install -y httpd
 yum -y install docker
 service docker start
-yum install python36-setuptools
-cd /home/ec2-user
-ls
-pip-3.6 install -r requirements.txt
-python3.6 build_reports.py
+yum -y install python36
+curl -O https://bootstrap.pypa.io/get-pip.py
+python3 get-pip.py --user
+pip3.6 install -r requirements.txt
