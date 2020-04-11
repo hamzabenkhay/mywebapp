@@ -2,7 +2,8 @@ version: 0.0
 os: linux
 files:
   - source: /src
-    destination: /home/ec2-user/
+    destination: /home/ec2-user
+
 hooks:
   BeforeInstall:
     - location: scripts/install_dependencies.sh
