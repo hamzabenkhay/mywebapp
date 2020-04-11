@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /opt/codedeploy-agent/
+    destination: /home/ec2-user/
 
 hooks:
   BeforeInstall:
