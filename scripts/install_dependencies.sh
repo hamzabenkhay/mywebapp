@@ -7,6 +7,6 @@ chmod +x /usr/local/bin/docker-compose
 ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
 service docker start
 
-cd /home/ec2-user/
+#cd /home/ec2-user/
 
-docker-compose up
+#docker-compose up
