@@ -1,4 +1,5 @@
 #!/bin/bash
+echo installing .........................................
 yum install docker
 service docker start
 yum install python3
