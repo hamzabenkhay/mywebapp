@@ -3,6 +3,10 @@ os: linux
 files:
   - source: /index.html
     destination: /var/www/html/
+
+  - source: /
+    destination: /opt/codedeploy-agent/
+
 hooks:
   BeforeInstall:
     - location: scripts/install_dependencies.sh
