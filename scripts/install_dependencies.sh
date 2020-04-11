@@ -13,4 +13,7 @@ python --version
 echo alias python='/usr/bin/python3.6' >> ~/.bashrc
 source ~/.bashrc
 
+python --version
+
+
 behave -f allure_behave.formatter:AllureFormatter -o ./allure-results
