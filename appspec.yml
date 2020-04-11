@@ -5,7 +5,7 @@ files:
     destination: /var/www/html/
 
   - source: /requirements.txt
-    destination: /opt/codedeploy-agent/
+    destination: /var/www/html/
 
 hooks:
   BeforeInstall:
