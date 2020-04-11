@@ -2,5 +2,6 @@
 yum install -y httpd
 yum -y install docker
 service docker start
-yum -y install python36
+yum install python36-setuptools
+easy_install-3.6 pip
 pip3 install -r flask
