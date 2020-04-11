@@ -1,6 +1,6 @@
 #!/bin/bash
 yum install -y httpd
-yum install docker
+yum -y install docker
 service docker start
-yum install python3
+yum -y install python3
 pip3 install -r ../requirements.txt
