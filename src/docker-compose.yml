@@ -1,0 +1,25 @@
+version: '3'
+services:
+
+  behave:
+    build: .
+    command: behave -f allure_behave.formatter:AllureFormatter -o ./allure-results
+    volumes:
+    - ${PWD}/allure-results:/app/allure-results
+    ports:
+      - "5000:5000"
+
+  allure:
+    image: "frankescobar/allure-docker-service"
+    environment:
+      CHECK_RESULTS_EVERY_SECONDS: 1
+      KEEP_HISTORY: "TRUE"
+    ports:
+      - "4040:4040"
+      - "5050:5050"
+    volumes:
+    - ${PWD}/allure-results:/app/allure-results
+
+
+
+
