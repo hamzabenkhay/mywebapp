@@ -4,5 +4,4 @@ yum -y install docker
 service docker start
 yum install python36-setuptools
 easy_install-3.6 pip
-pwd
-ls
+pip-3.6 install -r ~/requirements.txt
