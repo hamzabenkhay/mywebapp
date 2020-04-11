@@ -1,3 +1,5 @@
 #!/bin/bash
-service httpd stop
+
+cd /home/ec2-user/
+docker-compose stop
 
