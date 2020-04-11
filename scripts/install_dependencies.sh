@@ -7,4 +7,3 @@ curl -O https://bootstrap.pypa.io/get-pip.py
 python3 get-pip.py --user
 cd /home/ec2-user/
 pip-3.6 install -r requirements.txt
-python3 build_reports.py
